@@ -1,13 +1,19 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace L2CoreDotNET.Commons.Logging
 {
-    public class MasterFormatter
+    public static class MasterFormatter
     {
-        protected
+        public static readonly String SHIFT = "\tat";
+
+        public static readonly String CELF = "\r\n";
+
+        public static readonly String SPACE = "\t";
+
+        public static String GetFormatedDate(this DateTime dateTime) => dateTime.ToString("yyyy-MM-dd HH':'mm':'ss");
+
+
+
+
     }
 }
